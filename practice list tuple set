@@ -1,0 +1,381 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "cdf728b7-eae1-4776-b166-bfb8b1c21511",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 1,2,3,4,5\n"
+     ]
+    },
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: '1,2,3,4,5'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[1], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m n \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124menter number of elements:\u001b[39m\u001b[38;5;124m\"\u001b[39m))\n\u001b[0;32m      2\u001b[0m \u001b[38;5;28mlist\u001b[39m \u001b[38;5;241m=\u001b[39m []\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m i \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mrange\u001b[39m(n):\n",
+      "\u001b[1;31mValueError\u001b[0m: invalid literal for int() with base 10: '1,2,3,4,5'"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enetr elements:\")))\n",
+    "print(\"list:\",lst)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f20b0541-3bb4-4d68-b114-76512f6e0e29",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "lst = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "print(\"list:\",lst)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3ec7cf97-fff6-4c12-866a-b74344d54cc3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [1,2]\n",
+    "print(list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a507435b-ccdd-4e66-80e7-f704fa327c3c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 2\n",
+      "enter elements: 2\n",
+      "enter elements: 3\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "'list' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[9], line 5\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m i \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mrange\u001b[39m(n):\n\u001b[0;32m      4\u001b[0m     \u001b[38;5;28mlist\u001b[39m\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124menter elements:\u001b[39m\u001b[38;5;124m\"\u001b[39m)))\n\u001b[1;32m----> 5\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124msum:\u001b[39m\u001b[38;5;124m\"\u001b[39m, \u001b[38;5;28mlist\u001b[39m(\u001b[38;5;28msum\u001b[39m))\n",
+      "\u001b[1;31mTypeError\u001b[0m: 'list' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "print(\"sum:\", list(sum))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "4cb176a6-10bf-46c9-92cc-fceeefb9b704",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list: [10, 20, 30, 40, 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40,50]\n",
+    "print(\"list:\",numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "ea034520-04a8-4e95-abce-1a80d7b3611d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter 5 integers seperated by space: 1 2 3 4 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list: [1, 2, 3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [int(x) for x in input(\"enter 5 integers seperated by space:\").split()]\n",
+    "print(\"list:\",numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "54817f75-195d-4d6d-9dfc-748446b36418",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sum: 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [10,20,30,40]\n",
+    "print(\"sum:\",sum(numbers))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "f031874e-321e-466f-901f-6432b28e4167",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "tuples: (1, 2, 3, 4, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "t = (1,2,3,4,5)\n",
+    "print(\"tuples:\",t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f57672db-90b1-42ca-a876-ef91774ca349",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "set: {1, 2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = {1,2,3,4,5,6}\n",
+    "print(\"set:\",s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "71a3a582-6be1-4b87-ac90-caf93cd93520",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 2\n",
+      "enter elements: 3\n",
+      "enter elements: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "largest: 4\n",
+      "smallest: 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "print(\"largest:\",max(list))\n",
+    "print(\"smallest:\",min(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "165af93a-544b-4fab-b591-afdd9efd380c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 5\n",
+      "enter elements: 2\n",
+      "enter elements: 2\n",
+      "enter elements: 3\n",
+      "enter elements: 2\n",
+      "enter elements: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even count: 4\n",
+      "odd count: 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "even = odd = 0\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "for num in list:\n",
+    "    if num % 2 == 0:\n",
+    "        even += 1\n",
+    "    else:\n",
+    "        odd += 1\n",
+    "print(\"even count:\",even)\n",
+    "print(\"odd count:\",odd)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "4c67237b-13f0-4635-ae0f-10465ec8c82e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 3\n",
+      "enter elements: 2\n",
+      "enter elements: 3\n",
+      "enter elements: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "reversed list: [4, 3, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "list.reverse()\n",
+    "print(\"reversed list:\",list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "03bf81dc-9f0e-4845-8d5b-debd845fc4f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number of elements: 2\n",
+      "enter elements: 1\n",
+      "enter elements: 2\n"
+     ]
+    },
+    {
+     "ename": "AttributeError",
+     "evalue": "'list' object has no attribute 'ascending'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[37], line 5\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m i \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mrange\u001b[39m(n):\n\u001b[0;32m      4\u001b[0m     \u001b[38;5;28mlist\u001b[39m\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124menter elements:\u001b[39m\u001b[38;5;124m\"\u001b[39m)))\n\u001b[1;32m----> 5\u001b[0m \u001b[38;5;28mlist\u001b[39m\u001b[38;5;241m.\u001b[39mascending()\n\u001b[0;32m      6\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mascending order:\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;28mlist\u001b[39m)\n",
+      "\u001b[1;31mAttributeError\u001b[0m: 'list' object has no attribute 'ascending'"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"enter number of elements:\"))\n",
+    "list = []\n",
+    "for i in range(n):\n",
+    "    list.append(int(input(\"enter elements:\")))\n",
+    "if num > ==0:\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54786e00-8050-4364-9d92-4cea780d0abd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
